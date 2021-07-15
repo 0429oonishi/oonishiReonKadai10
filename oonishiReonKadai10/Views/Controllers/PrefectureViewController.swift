@@ -13,8 +13,11 @@ final class PrefectureViewController: UIViewController {
     
     @IBOutlet private weak var tableView: UITableView!
     
-    private let prefectureNames: Observable<[String]> = Prefecture.name
+    private let viewModel: PrefectureViewModelType = PrefectureViewModel()
     private let disposeBag = DisposeBag()
+    private var prefectureNames: Observable<[String]> {
+        viewModel.outputs.prefectureNames
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +34,7 @@ final class PrefectureViewController: UIViewController {
     }
     
     private func setupBindings() {
-        // データソースを使う
+        // MARK: - ToDo データソースを使う
         prefectureNames.bind(
             to: tableView.rx.items(cellIdentifier: PrefectureTableViewCell.identifier,
                                    cellType: PrefectureTableViewCell.self)
