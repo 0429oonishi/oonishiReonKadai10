@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,9 @@
 		ABD81A0426A02DDA00E7D135 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABD81A0226A02DDA00E7D135 /* Main.storyboard */; };
 		ABD81A0626A02DDB00E7D135 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABD81A0526A02DDB00E7D135 /* Assets.xcassets */; };
 		ABD81A0926A02DDB00E7D135 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABD81A0726A02DDB00E7D135 /* LaunchScreen.storyboard */; };
+		ABD81A1226A0340D00E7D135 /* PrefectureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD81A1026A0340D00E7D135 /* PrefectureTableViewCell.swift */; };
+		ABD81A1326A0340D00E7D135 /* PrefectureTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABD81A1126A0340D00E7D135 /* PrefectureTableViewCell.xib */; };
+		ABD81A1526A0383A00E7D135 /* Prefecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD81A1426A0383A00E7D135 /* Prefecture.swift */; };
 		D2F003E9D91EF5F8D0B722B0 /* Pods_oonishiReonKadai10.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61ACF4CA2F7B91028AEC500E /* Pods_oonishiReonKadai10.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +30,9 @@
 		ABD81A0526A02DDB00E7D135 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABD81A0826A02DDB00E7D135 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABD81A0A26A02DDB00E7D135 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABD81A1026A0340D00E7D135 /* PrefectureTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefectureTableViewCell.swift; sourceTree = "<group>"; };
+		ABD81A1126A0340D00E7D135 /* PrefectureTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PrefectureTableViewCell.xib; sourceTree = "<group>"; };
+		ABD81A1426A0383A00E7D135 /* Prefecture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prefecture.swift; sourceTree = "<group>"; };
 		BBCBFF70F1AA6D10A741D0EC /* Pods-oonishiReonKadai10.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-oonishiReonKadai10.debug.xcconfig"; path = "Target Support Files/Pods-oonishiReonKadai10/Pods-oonishiReonKadai10.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -48,7 +54,6 @@
 				BBCBFF70F1AA6D10A741D0EC /* Pods-oonishiReonKadai10.debug.xcconfig */,
 				48E0E5108E6B69A173F64453 /* Pods-oonishiReonKadai10.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -76,6 +81,9 @@
 				ABD819FC26A02DDA00E7D135 /* AppDelegate.swift */,
 				ABD819FE26A02DDA00E7D135 /* SceneDelegate.swift */,
 				ABD81A0026A02DDA00E7D135 /* ViewController.swift */,
+				ABD81A1426A0383A00E7D135 /* Prefecture.swift */,
+				ABD81A1026A0340D00E7D135 /* PrefectureTableViewCell.swift */,
+				ABD81A1126A0340D00E7D135 /* PrefectureTableViewCell.xib */,
 				ABD81A0226A02DDA00E7D135 /* Main.storyboard */,
 				ABD81A0526A02DDB00E7D135 /* Assets.xcassets */,
 				ABD81A0726A02DDB00E7D135 /* LaunchScreen.storyboard */,
@@ -151,6 +159,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABD81A1326A0340D00E7D135 /* PrefectureTableViewCell.xib in Resources */,
 				ABD81A0926A02DDB00E7D135 /* LaunchScreen.storyboard in Resources */,
 				ABD81A0626A02DDB00E7D135 /* Assets.xcassets in Resources */,
 				ABD81A0426A02DDA00E7D135 /* Main.storyboard in Resources */,
@@ -206,7 +215,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABD81A1226A0340D00E7D135 /* PrefectureTableViewCell.swift in Sources */,
 				ABD81A0126A02DDA00E7D135 /* ViewController.swift in Sources */,
+				ABD81A1526A0383A00E7D135 /* Prefecture.swift in Sources */,
 				ABD819FD26A02DDA00E7D135 /* AppDelegate.swift in Sources */,
 				ABD819FF26A02DDA00E7D135 /* SceneDelegate.swift in Sources */,
 			);
