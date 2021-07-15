@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  PrefectureViewController.swift
 //  oonishiReonKadai10
 //
 //  Created by 大西玲音 on 2021/07/15.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class ViewController: UIViewController {
+final class PrefectureViewController: UIViewController {
     
     private let prefectureNames = Prefecture.name
     
@@ -31,7 +31,7 @@ final class ViewController: UIViewController {
     
 }
 
-extension ViewController: UITableViewDelegate {
+extension PrefectureViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView,
                    heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -39,7 +39,7 @@ extension ViewController: UITableViewDelegate {
     }
 }
 
-extension ViewController: UITableViewDataSource {
+extension PrefectureViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView,
                    numberOfRowsInSection section: Int) -> Int {

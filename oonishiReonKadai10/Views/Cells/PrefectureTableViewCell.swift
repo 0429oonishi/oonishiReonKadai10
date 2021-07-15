@@ -29,7 +29,7 @@ final class PrefectureTableViewCell: UITableViewCell {
     
     func configure(with prefectureName: String) {
         prefectureNameLabel.text = prefectureName
-        prefecutreNumberLabel.text = String(tag) + "番目"
+        prefecutreNumberLabel.text = String(tag) + "番目の都道府県です"
         backgroundColor = backgroundColors[tag % backgroundColors.count]
     }
     
