@@ -6,56 +6,40 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 final class PrefectureViewController: UIViewController {
     
-    private let prefectureNames = Prefecture.name
-    
     @IBOutlet private weak var tableView: UITableView!
+    
+    private let prefectureNames: Observable<[String]> = Prefecture.name
+    private let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupTableView()
+        setupBindings()
         
     }
     
     private func setupTableView() {
-        tableView.delegate = self
-        tableView.dataSource = self
         tableView.register(PrefectureTableViewCell.nib,
                            forCellReuseIdentifier: PrefectureTableViewCell.identifier)
         tableView.tableFooterView = UIView()
     }
     
-    
-}
-
-extension PrefectureViewController: UITableViewDelegate {
-    
-    func tableView(_ tableView: UITableView,
-                   heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 50
+    private func setupBindings() {
+        // データソースを使う
+        prefectureNames.bind(
+            to: tableView.rx.items(cellIdentifier: PrefectureTableViewCell.identifier,
+                                   cellType: PrefectureTableViewCell.self)
+        ) { row, element, cell in
+            cell.tag = row + 1
+            cell.configure(with: element)
+        }
+        .disposed(by: disposeBag)
     }
-}
-
-extension PrefectureViewController: UITableViewDataSource {
-    
-    func tableView(_ tableView: UITableView,
-                   numberOfRowsInSection section: Int) -> Int {
-        return prefectureNames.count
-    }
-    
-    func tableView(_ tableView: UITableView,
-                   cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(
-            withIdentifier: PrefectureTableViewCell.identifier
-        ) as! PrefectureTableViewCell
-        let prefecutreName = prefectureNames[indexPath.row]
-        cell.tag = indexPath.row + 1
-        cell.configure(with: prefecutreName)
-        return cell
-    }
-    
     
 }
