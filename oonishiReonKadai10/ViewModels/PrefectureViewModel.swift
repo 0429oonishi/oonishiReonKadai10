@@ -6,3 +6,36 @@
 //
 
 import Foundation
+import RxSwift
+
+protocol PrefectureViewModelInput {
+    
+}
+
+protocol PrefectureViewModelOutput: AnyObject {
+    var prefectureNames: Observable<[String]> { get }
+}
+
+protocol PrefectureViewModelType {
+    var inputs: PrefectureViewModelInput { get }
+    var outputs: PrefectureViewModelOutput { get }
+}
+
+final class PrefectureViewModel: PrefectureViewModelInput,
+                                 PrefectureViewModelOutput {
+    
+    let prefectureNames: Observable<[String]> = Prefecture.name
+    
+}
+
+extension PrefectureViewModel: PrefectureViewModelType {
+    
+    var inputs: PrefectureViewModelInput {
+        return self
+    }
+    
+    var outputs: PrefectureViewModelOutput {
+        return self
+    }
+    
+}

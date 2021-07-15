@@ -16,6 +16,7 @@
 		ABD81A1226A0340D00E7D135 /* PrefectureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD81A1026A0340D00E7D135 /* PrefectureTableViewCell.swift */; };
 		ABD81A1326A0340D00E7D135 /* PrefectureTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABD81A1126A0340D00E7D135 /* PrefectureTableViewCell.xib */; };
 		ABD81A1526A0383A00E7D135 /* Prefecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD81A1426A0383A00E7D135 /* Prefecture.swift */; };
+		ABD81A1C26A0974100E7D135 /* PrefectureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD81A1B26A0974100E7D135 /* PrefectureViewModel.swift */; };
 		D2F003E9D91EF5F8D0B722B0 /* Pods_oonishiReonKadai10.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61ACF4CA2F7B91028AEC500E /* Pods_oonishiReonKadai10.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		ABD81A1026A0340D00E7D135 /* PrefectureTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefectureTableViewCell.swift; sourceTree = "<group>"; };
 		ABD81A1126A0340D00E7D135 /* PrefectureTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PrefectureTableViewCell.xib; sourceTree = "<group>"; };
 		ABD81A1426A0383A00E7D135 /* Prefecture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prefecture.swift; sourceTree = "<group>"; };
+		ABD81A1B26A0974100E7D135 /* PrefectureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefectureViewModel.swift; sourceTree = "<group>"; };
 		BBCBFF70F1AA6D10A741D0EC /* Pods-oonishiReonKadai10.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-oonishiReonKadai10.debug.xcconfig"; path = "Target Support Files/Pods-oonishiReonKadai10/Pods-oonishiReonKadai10.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,7 +82,7 @@
 			children = (
 				ABD81A1726A03A4000E7D135 /* Models */,
 				ABD81A1826A03A4500E7D135 /* Views */,
-				ABD81A1626A03A3800E7D135 /* Controllers */,
+				ABD81A1D26A0974600E7D135 /* ViewModels */,
 				ABD819FC26A02DDA00E7D135 /* AppDelegate.swift */,
 				ABD819FE26A02DDA00E7D135 /* SceneDelegate.swift */,
 				ABD81A0526A02DDB00E7D135 /* Assets.xcassets */,
@@ -109,6 +111,7 @@
 		ABD81A1826A03A4500E7D135 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				ABD81A1626A03A3800E7D135 /* Controllers */,
 				ABD81A1926A03A5C00E7D135 /* Cells */,
 				ABD81A1A26A03A6300E7D135 /* Storyboards */,
 			);
@@ -130,6 +133,14 @@
 				ABD81A0226A02DDA00E7D135 /* Main.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		ABD81A1D26A0974600E7D135 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				ABD81A1B26A0974100E7D135 /* PrefectureViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		B0E4B9E94CFEEC728FC5A691 /* Frameworks */ = {
@@ -260,6 +271,7 @@
 				ABD81A1526A0383A00E7D135 /* Prefecture.swift in Sources */,
 				ABD819FD26A02DDA00E7D135 /* AppDelegate.swift in Sources */,
 				ABD819FF26A02DDA00E7D135 /* SceneDelegate.swift in Sources */,
+				ABD81A1C26A0974100E7D135 /* PrefectureViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
