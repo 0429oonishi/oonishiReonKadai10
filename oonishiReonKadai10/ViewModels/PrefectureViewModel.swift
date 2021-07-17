@@ -24,8 +24,7 @@ protocol PrefectureViewModelType {
 final class PrefectureViewModel: PrefectureViewModelInput,
                                  PrefectureViewModelOutput {
     
-    let prefectureNames: Observable<[String]> = Prefecture.name
-    
+    let prefectureNames: Observable<[String]> = .just(Prefecture.name)
 }
 
 extension PrefectureViewModel: PrefectureViewModelType {
