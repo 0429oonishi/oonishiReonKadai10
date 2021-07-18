@@ -13,7 +13,7 @@ protocol PrefectureViewModelInput {
 }
 
 protocol PrefectureViewModelOutput: AnyObject {
-    var prefectureNames: Observable<[String]> { get }
+    var prefectureNames: [String] { get }
 }
 
 protocol PrefectureViewModelType {
@@ -24,7 +24,7 @@ protocol PrefectureViewModelType {
 final class PrefectureViewModel: PrefectureViewModelInput,
                                  PrefectureViewModelOutput {
     
-    let prefectureNames: Observable<[String]> = Prefecture.name
+    let prefectureNames: [String] = Prefecture.name
     
 }
 

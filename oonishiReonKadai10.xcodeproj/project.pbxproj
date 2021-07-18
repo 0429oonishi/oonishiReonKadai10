@@ -17,7 +17,6 @@
 		ABD81A1326A0340D00E7D135 /* PrefectureTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABD81A1126A0340D00E7D135 /* PrefectureTableViewCell.xib */; };
 		ABD81A1526A0383A00E7D135 /* Prefecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD81A1426A0383A00E7D135 /* Prefecture.swift */; };
 		ABD81A1C26A0974100E7D135 /* PrefectureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD81A1B26A0974100E7D135 /* PrefectureViewModel.swift */; };
-		D2F003E9D91EF5F8D0B722B0 /* Pods_oonishiReonKadai10.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61ACF4CA2F7B91028AEC500E /* Pods_oonishiReonKadai10.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,7 +42,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2F003E9D91EF5F8D0B722B0 /* Pods_oonishiReonKadai10.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
