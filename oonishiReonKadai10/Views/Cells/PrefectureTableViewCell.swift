@@ -16,21 +16,10 @@ final class PrefectureTableViewCell: UITableViewCell {
     static var nib: UINib { UINib(nibName: String(describing: self), bundle: nil) }
     private let backgroundColors: [UIColor] = [.systemRed, .systemGreen, .systemBlue]
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-    
-    func configure(with prefectureName: String) {
+    func configure(prefectureName: String, index: Int) {
         prefectureNameLabel.text = prefectureName
-        prefecutreNumberLabel.text = String(tag) + "番目の都道府県です"
-        backgroundColor = backgroundColors[tag % backgroundColors.count]
+        prefecutreNumberLabel.text = String(index) + "番目の都道府県です"
+        backgroundColor = backgroundColors[index % backgroundColors.count]
     }
     
 }
